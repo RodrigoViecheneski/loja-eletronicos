@@ -25,6 +25,9 @@ export default function Screen() {
                 />
                 <Text style={styles.title}>{product.title}</Text>
                 <Text style={styles.description}>{product.description}</Text>
+                <View style={styles.priceArea}>
+                    <Text style={styles.price}>R$ {product.price.toFixed(2)}</Text>
+                </View>
             </ScrollView>
             <View style={styles.buttonArea}>
                 <Button
@@ -62,5 +65,15 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: '#555555',
         marginBottom: 20
+    },
+    priceArea: {
+        padding: 10,
+        borderRadius: 10,
+        backgroundColor: '#CCCCCC'
+
+    },
+    price: {
+        fontSize: 22,
+        textAlign: 'center'
     }
 });
