@@ -1,5 +1,6 @@
 import { router, Stack, useLocalSearchParams } from "expo-router";
-import { Text, Image, StyleSheet, SafeAreaView, ScrollView, View, Button } from "react-native";
+import { Text, Image, StyleSheet, SafeAreaView, ScrollView, View } from "react-native";
+import { Button } from "../../components/button";
 import { getProductById } from "../../services/product";
 
 
