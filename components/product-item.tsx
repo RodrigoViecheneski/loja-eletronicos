@@ -7,7 +7,7 @@ type Props = {
 //<Text>{data.title} - {data.price}</Text> teste 
 export const ProductItem = ({ data }: Props) => {
     return (
-        <Link href={`/products/${data.id}`} asChild>
+        <Link href={`/product/${data.id}`} asChild>
             <Pressable style={styles.container}>
                 <Image 
                     style={styles.img}
